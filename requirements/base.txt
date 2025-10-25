@@ -160,7 +160,6 @@ greenlet==3.1.1
     # via
     #   apache-superset (pyproject.toml)
     #   shillelagh
-    #   sqlalchemy
 gunicorn==23.0.0
     # via apache-superset (pyproject.toml)
 h11==0.16.0
@@ -217,13 +216,13 @@ markupsafe==3.0.2
     #   mako
     #   werkzeug
     #   wtforms
-marshmallow==3.26.1
+marshmallow==4.0.1
     # via
     #   apache-superset (pyproject.toml)
     #   flask-appbuilder
     #   marshmallow-sqlalchemy
     #   marshmallow-union
-marshmallow-sqlalchemy==1.4.0
+marshmallow-sqlalchemy @ git+https://github.com/marshmallow-code/marshmallow-sqlalchemy.git@c6ee6344338dfc1938e11b7b7c6c9e0bb157b0ec
     # via
     #   -r requirements/base.in
     #   flask-appbuilder
@@ -265,7 +264,6 @@ packaging==25.0
     #   deprecation
     #   gunicorn
     #   limits
-    #   marshmallow
     #   shillelagh
 pandas==2.1.4
     # via apache-superset (pyproject.toml)
@@ -415,8 +413,6 @@ typing-extensions==4.14.0
     #   limits
     #   pydantic
     #   pydantic-core
-    #   pyopenssl
-    #   referencing
     #   selenium
     #   shillelagh
     #   typing-inspection
